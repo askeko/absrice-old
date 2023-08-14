@@ -19,6 +19,9 @@ export BROWSER="firefox"
 # qt theme
 export QT_QPA_PLATFORMTHEME=qt6ct
 
+# cursor size
+export XCURSOR_SIZE=32
+
 # bat (cat) coloring:
 export BAT_THEME="Enky-TokyoNight"
 
