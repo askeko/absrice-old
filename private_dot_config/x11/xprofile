@@ -3,11 +3,12 @@
 # This file runs when a DM logs you into a graphical session.
 # This file is sourced in xinitrc and will also run when you startx.
 
-xrandr --dpi 96     # set dpi
+xrandr --dpi 96 # set dpi
 dunst &
 unclutter &
-setbg 
+udiskie &
 
+setbg
 setxkbmap -model pc105 -layout dk -variant dvorak -option caps:escape
 #xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources & xrdbpid=$!	# Uncomment to use Xresources colors/settings on startup
 

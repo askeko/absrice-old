@@ -16,8 +16,11 @@ export EDITOR="nvim"
 export TERMINAL="kitty"
 export BROWSER="firefox"
 
+# qt theme
+export QT_QPA_PLATFORMTHEME=qt6ct
+
 # bat (cat) coloring:
-export BAT_THEME="Catppuccin-mocha"
+export BAT_THEME="Enky-TokyoNight"
 
 # ~/ Clean-up
 export XDG_CONFIG_HOME="$HOME/.config"
