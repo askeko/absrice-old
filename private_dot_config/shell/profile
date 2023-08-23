@@ -39,6 +39,7 @@ export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority" # This line may break some DM's
 export CARGO_HOME="${XDG_CONFIG_HOME:-$HOME/.config}/cargo"
 export NODE_REPL_HISTORY="${XDG_CONFIG_HOME:-$HOME/.config}/node_repl_history"
 export IPYTHONDIR="${XDG_CONFIG_HOME:-$HOME/.config}/ipython"
+export NUGET_PACKAGES="${XDG_CONFIG_HOME:-$HOME/.config}/nuget"
 
 # This is the list for lf icons:
 export LF_ICONS="\

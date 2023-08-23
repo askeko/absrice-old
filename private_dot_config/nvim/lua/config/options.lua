@@ -21,12 +21,12 @@ opt.incsearch = true -- Show seach match so far when typing
 opt.isfname:append("@-@") -- Append full path to relative path
 opt.relativenumber = true -- Enable relative line numbers
 opt.scrolloff = 8 -- Always keep 8 lines visible when scrolling
-opt.shiftwidth = 2 -- Size of indents
+opt.shiftwidth = 4 -- Size of indents
 opt.signcolumn = "yes" -- Always show the signcolumn, otherwise it would shift the text each time
 opt.smartindent = true -- insert indents automatically
-opt.softtabstop = 2 -- number of spaces tabs counts for
+opt.softtabstop = 4 -- number of spaces tabs counts for
 opt.swapfile = false -- disable swap file (using undodir instead)
-opt.tabstop = 2 -- number of spaces tabs count for
+opt.tabstop = 4 -- number of spaces tabs count for
 opt.termguicolors = true -- enables 24-bit rgb color in the tui
 opt.undodir = os.getenv("HOME") .. "/.vim/undodir" -- directory for the undodir
 opt.undofile = true -- save undo history
