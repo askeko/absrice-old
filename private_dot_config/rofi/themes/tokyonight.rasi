@@ -1,11 +1,11 @@
 * {
-    bg-col: #24283b;
+    bg-col: #1a1b26;
     bg-col-light: #292e42;
-    border-col: #292e42;
-    selected-col: #292e42;
+    border-col: #3b4261;
+    selected-col: #7aa2f7;
     blue: #7aa2f7;
     fg-col: #c0caf5;
-    fg-col2: #a9b1d6;
+    fg-col2: #16161e;
     grey: #3b4261;
     width: 600;
 }

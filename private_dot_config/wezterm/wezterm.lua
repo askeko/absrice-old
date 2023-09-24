@@ -11,7 +11,7 @@ if wezterm.config_builder then
 end
 
 -- This is where you actually apply your config choices
-config.color_scheme = "tokyonight_storm"
+config.color_scheme = "tokyonight_night"
 config.font = wezterm.font("FiraCode Nerd Font Mono", {
 	weight = "Regular",
 	italic = true,
