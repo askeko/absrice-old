@@ -16,6 +16,11 @@ export EDITOR="nvim"
 export TERMINAL="wezterm"
 export BROWSER="firefox"
 
+# Visual paradigm fix
+export AWT_TOOLKIT=MToolkit
+export _JAVA_AWT_WM_NONREPARENTING=1
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
+
 # qt theme
 export QT_QPA_PLATFORMTHEME=qt6ct
 

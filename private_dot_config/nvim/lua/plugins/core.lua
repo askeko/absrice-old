@@ -2,6 +2,7 @@ return {
   {
     "rose-pine/neovim",
   },
+
   {
     "LazyVim/LazyVim",
     opts = {
@@ -27,6 +28,30 @@ return {
     "mbbill/undotree",
     keys = {
       { "<leader>U", "<cmd>UndotreeToggle<cr>" },
+    },
+  },
+
+  {
+    "hrsh7th/nvim-cmp",
+    opts = function(_, opts)
+      local cmp = require("cmp")
+      opts.mapping = vim.tbl_deep_extend("force", opts.mapping, {
+        ["<CR>"] = cmp.config.disable,
+      })
+    end,
+  },
+
+  {
+    "mfussenegger/nvim-jdtls",
+    ---@type lspconfig.options.jdtls
+    ---@diagnostic disable-next-line: missing-fields
+    opts = {
+      jdtls = function(opts)
+        local install_path = require("mason-registry").get_package("jdtls"):get_install_path()
+        local jvmArg = "-javaagent:" .. install_path .. "/lombok.jar"
+        table.insert(opts.cmd, "--jvm-arg=" .. jvmArg)
+        return opts
+      end,
     },
   },
 }
