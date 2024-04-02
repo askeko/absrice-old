@@ -1,4 +1,4 @@
 #!/bin/sh
-xrandr --output eDP --off --output DisplayPort-0 --off --output DisplayPort-1 --off --output DisplayPort-2 --primary --mode 3440x1440 --pos 0x0 --rotate normal --output DisplayPort-3 --mode 2560x1440 --pos 3440x0 --rotate normal --output DisplayPort-4 --off
+xrandr --output eDP --off --output DisplayPort-0 --off --output DisplayPort-1 --off --output DisplayPort-2 --primary --mode 3440x1440 --rate 175 --pos 1440x467 --rotate normal --output DisplayPort-3 --mode 2560x1440 --pos 4880x467 --rotate normal --output DisplayPort-4 --mode 2560x1440 --pos 0x0 --rotate left
 setbg ~/.local/share/bg
 setxkbmap -model pc105 -layout dk
