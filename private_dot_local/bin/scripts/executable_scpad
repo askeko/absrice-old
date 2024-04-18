@@ -2,7 +2,7 @@
 
 # bspwm scratchpad
 
-winclass="$(xdotool search --class scpad)";
+winclass="$(xdotool search --class scpad)"
 if [ -z "$winclass" ]; then
 	kitty --class scpad &
 else
@@ -12,4 +12,3 @@ else
 		rm /tmp/scpad && xdo show "$winclass"
 	fi
 fi
-

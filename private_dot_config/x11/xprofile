@@ -4,6 +4,7 @@
 # This file is sourced in xinitrc and will also run when you startx.
 
 xrandr --dpi 96 # set dpi
+xrdb -merge ~/.config/x11/xresources
 dunst &
 unclutter &
 udiskie &

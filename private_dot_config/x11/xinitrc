@@ -16,5 +16,7 @@ eval $(gnome-keyring-daemon --start)
 export SSH_AUTH_SOCK
 /usr/bin/lxpolkit &
 
-dwmblocks &
-ssh-agent dwm
+# dwmblocks &
+# ssh-agent dwm
+
+exec bspwm
