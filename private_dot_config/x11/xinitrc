@@ -16,7 +16,8 @@ fi
 eval $(gnome-keyring-daemon --start)
 export SSH_AUTH_SOCK
 
-# dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY &
+# Needed for blueman-manager
+dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY &
 
 # dwmblocks &
 # ssh-agent dwm

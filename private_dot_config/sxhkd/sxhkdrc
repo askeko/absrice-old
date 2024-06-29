@@ -20,10 +20,10 @@ XF86AudioMicMute
 	wpctl set-source-mute @DEFAULT_SOURCE@ toggle
 
 XF86MonBrightnessDown
-	sudo xbacklight -dec 10
+	brightnessctl set 10%-
 
 XF86MonBrightnessUp
-	sudo xbacklight -inc 10
+	brightnessctl set +10%
 
 XF86Calculator
 	gnome-calculator
