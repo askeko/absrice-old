@@ -12,9 +12,11 @@ else
 	. "$HOME/.xprofile"
 fi
 
+/usr/bin/lxpolkit &
 eval $(gnome-keyring-daemon --start)
 export SSH_AUTH_SOCK
-/usr/bin/lxpolkit &
+
+# dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY &
 
 # dwmblocks &
 # ssh-agent dwm

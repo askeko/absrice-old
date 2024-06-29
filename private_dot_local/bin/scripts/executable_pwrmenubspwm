@@ -13,7 +13,7 @@ wmpid() { # This function is needed if there are multiple instances of the windo
 }
 
 case "$(printf " lock\n leave bspwm\n renew bspwm\n reboot\n shutdown" | dmenu -i -p 'Action: ')" in
-' lock') slock ;;
+' lock') lock ;;
 ' leave bspwm') bspc quit ;;
 ' renew bspwm') bspc wm -r ;;
 ' reboot') $ctl reboot -i ;;

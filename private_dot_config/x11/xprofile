@@ -8,6 +8,7 @@ xrdb -merge ~/.config/x11/xresources
 dunst &
 unclutter &
 udiskie &
+blueman-applet &
 
 setbg
 setxkbmap -model pc105 -layout dk -variant dvorak -option caps:escape
