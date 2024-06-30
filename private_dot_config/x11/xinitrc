@@ -19,7 +19,7 @@ export SSH_AUTH_SOCK
 # Needed for blueman-manager
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY &
 
-# dwmblocks &
-# ssh-agent dwm
+dwmblocks &
+ssh-agent dwm
 
-exec bspwm
+# exec bspwm
