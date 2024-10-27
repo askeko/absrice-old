@@ -1,0 +1,8 @@
+#!/bin/sh
+
+. ~/.local/bin/statusbar/themes/tokyonight-night
+
+cpu_percentage=$(top -b -n 1 | grep "%Cpu(s)" | awk '{print $2}' | cut -d. -f1)
+cpu_percentage=$(printf '%.0f' $cpu_percentage)
+
+echo "^c$orange^  $cpu_percentage% ^d^"

@@ -5,20 +5,4 @@
 temp="$(awk '{print $4}' <(acpi -t))"
 temp=$(printf '%.0f' $temp)
 
-case 1 in
-$((temp >= 80)))
-    color=$red
-    icon=""
-    ;;
-$((temp >= 50)))
-    color=$yellow
-    icon=""
-    ;;
-$((temp >= 1)))
-    color=$teal
-    icon=""
-    ;;
-*) echo "N/A" && exit ;;
-esac
-
-echo "^c$color^  $temp°C ^d^"
+echo "^c$teal^  $temp°C ^d^"

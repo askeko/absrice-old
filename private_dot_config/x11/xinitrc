@@ -7,9 +7,9 @@
 # my graphical environment in this file.
 
 if [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile" ]; then
-	. "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile"
+    . "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile"
 else
-	. "$HOME/.xprofile"
+    . "$HOME/.xprofile"
 fi
 
 /usr/bin/lxpolkit &
@@ -20,6 +20,6 @@ export SSH_AUTH_SOCK
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY &
 
 dwmblocks &
-ssh-agent dwm
+execdwm
 
 # exec bspwm

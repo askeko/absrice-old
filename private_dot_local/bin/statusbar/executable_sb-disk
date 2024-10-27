@@ -19,7 +19,10 @@ esac
 case "$location" in
 "/home"*) icon="󰋜" ;;
 "/mnt"*) icon="󰉉" ;;
-*) icon="󰇅" ;;
+*) icon="" ;;
 esac
 
-printf "^c$purple^ %s %s ^d^" "$icon" "$(df -h "$location" | awk ' /[0-9]/ {print $3 "/" $2}')"
+avail="$(df -h "$location" | awk ' /[0-9]/ {print $5}')"
+avail_chk=$(printf '%.0f' $avail)
+
+printf "^c$purple^ %s %s ^d^" "$icon" "$avail_chk%"
