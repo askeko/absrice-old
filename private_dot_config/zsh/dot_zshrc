@@ -31,6 +31,9 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)     # Include hidden files.
 
+# Reverse search
+bindkey '^R' history-incremental-search-backward
+
 # vi mode
 bindkey -v
 export KEYTIMEOUT=1

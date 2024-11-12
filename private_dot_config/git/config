@@ -1,0 +1,19 @@
+[user]
+	email = askeklitgaard@gmail.com
+	name = askeko
+
+[core]
+    editor = nvim
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    dark = true
+    line-numbers = true
+    side-by-side = true
+
+[diff]
+    colorMoved = default
